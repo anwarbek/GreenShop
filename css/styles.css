@@ -1,46 +1,46 @@
 @font-face {
-    font-family: "Cera Pro";
-    src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
-        url("../fonts/CeraPro-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+  url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Cera Pro";
-    src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
-        url("../fonts/CeraPro-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+  url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Cera Pro";
-    src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
-        url("../fonts/CeraPro-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
+  url("../fonts/CeraPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Cera Pro";
-    src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
-        url("../fonts/CeraPro-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+  url("../fonts/CeraPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Hanging Letters";
-    src: url("../fonts/HangingLetters.woff2") format("woff2"),
-        url("../fonts/HangingLetters.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hanging Letters";
+  src: url("../fonts/HangingLetters.woff2") format("woff2"),
+  url("../fonts/HangingLetters.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -57,6 +57,16 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px dashed #46a358;
+  outline-offset: 3px;
+}
+
+.button {
+  border-radius: 6px;
+  background-color: #46a358;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -65,7 +75,7 @@ body {
   margin: 0;
   font-family: "Cera Pro", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 20px;
   background-color: #fff;
   color: #000;
 }
@@ -79,7 +89,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -90,4 +100,150 @@ img {
 /* MAIN-CONTENT */
 main {
   flex-grow: 1;
+}
+
+
+/* Header */
+.site-header {
+  padding: 26px 0 0 0;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.site-logo {
+  width: 150px;
+  height: 35px;
+}
+
+.sitelogo-link {
+  display: flex;
+}
+
+.site-navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navbar-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-navbar-list-item-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.site-navbar-list-item-link:hover {
+  font-weight: 700;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #46a358;
+}
+
+
+.login {
+  display: flex;
+}
+
+.login-item {
+  display: flex;
+  align-items: center;
+}
+
+.login-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+input[type=text] {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  padding: 0 24px;
+  background: url(../img/search-icon.svg) no-repeat 0 0;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 200px;
+}
+
+.basket {
+  display: flex;
+}
+
+.basket-link {
+  display: flex;
+  text-decoration: none;
+  width: 29px;
+  height: 24px;
+}
+
+.basket-link-img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.basket-icon-number {
+  position: relative;
+  top: 0;
+  right: 10px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 3px;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #46a358;
+  text-decoration: none;
+}
+
+.header-button-item {
+  padding: 7px 17px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-inner {
+  display: flex;
+  align-items: center;
+}
+
+.button-inner::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../img/logout-icon.svg) no-repeat center center;
+  margin-right: 4px;
+  
+}
+
+.header-divider {
+  border: 0px;
+  border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+  margin: 0;
+  padding: 0;
 }

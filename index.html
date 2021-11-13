@@ -5,13 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenShop</title>
-
+  
   <!-- Stylesheets -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
-<script src="js/main.js"></script>
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="header-item">
+        <div class="site-logo">
+          <a href="#" class="sitelogo-link">
+            <img src="img/greenshop-logo.svg" alt="GreenShop logo" width="150" height="35">
+          </a>
+        </div>
+        <div class="navbar">
+          <nav class="site-navbar">
+            <ul class="site-navbar-list">
+              <li class="site-navbar-list-item"><a class="site-navbar-list-item-link" href="#">Home</a></li>
+              <li class="site-navbar-list-item"><a class="site-navbar-list-item-link" href="#">Shop</a></li>
+              <li class="site-navbar-list-item"><a class="site-navbar-list-item-link" href="#">Plant Care</a></li>
+              <li class="site-navbar-list-item"><a class="site-navbar-list-item-link" href="#">Blogs</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="login">
+            <div class="login-item">
+              <form>
+                <input  id="search" name="search" type="text" placeholder="">
+              </form>
+            </div>
+
+            <div class="login-item">
+              <a href="#" class="basket-link">
+                <img class="basket-link-img" src="img/basket-icon.svg" alt="basket-icon">
+                <span class="basket-icon-number">6</span>
+              </a>
+            </div>
+
+            <div class="login-item">
+              <a class="header-button-item button" href="#">
+                <span class="button-inner">
+                <span class="button-text">Login</span></span>
+              </a>
+            </div>
+
+        </div>
+      </div>
+      <hr class="header-divider">
+    </div>
+  </header>
+  
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
