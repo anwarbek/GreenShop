@@ -1,3 +1,49 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+        url("../fonts/CeraPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+        url("../fonts/CeraPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
+        url("../fonts/CeraPro-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+        url("../fonts/CeraPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hanging Letters";
+    src: url("../fonts/HangingLetters.woff2") format("woff2"),
+        url("../fonts/HangingLetters.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,7 +63,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Cera Pro", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -25,7 +71,7 @@ body {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -33,7 +79,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  min-width: 1200px;
+  max-width: 1200px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
