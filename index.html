@@ -9,6 +9,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 </head>
 <body>
   
@@ -68,62 +69,237 @@
       </div>
     </div>
     
-    <!-- Menu -->
-    <div class="menu">
-      <div class="container">
-        <div class="menu-content">
-          <div class="menu-categories">
-            <h2 class="menu-categories-title menu-title">Categories</h2>
-            <a class="categories" href="#">House Plants<span>(33)</span></a>
-            <a class="categories" href="#">Potter Plants<span>(12)</span></a>
-            <a class="categories" href="#">Seeds<span>(65)</span></a>
-            <a class="categories" href="#">Small Plants<span>(39)</span></a>
-            <a class="categories" href="#">Big Plants<span>(23)</span></a>
-            <a class="categories" href="#">Succulents<span>(17)</span></a>
-            <a class="categories" href="#">Trerrariums<span>(19)</span></a>
-            <a class="categories" href="#">Gardening<span>(13)</span></a>
-            <a class="categories" href="#">Accessories<span>(18)</span></a>
-          </div>
-
-          <div class="menu-price">
-            <h2 class="menu-price-title menu-title">Price-Range</h2>
-            <div class="wrapper">
-              <div class="wrapper-container">
-                <div class="slider-track"></div>
-                <input type="range" min="0" max="2000" value="0" id="slider-1" oninput="slideOne()">
-                <input type="range" min="0" max="2000" value="1230" id="slider-2" oninput="slideTwo()">                
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="main-container container">
+        <!-- Menu -->
+        <div class="menu">
+          <!-- <div class="container"> -->
+            <div class="menu-content">
+              <div class="menu-categories">
+                <h2 class="menu-categories-title menu-title">Categories</h2>
+                <a class="categories" href="#">House Plants<span>(33)</span></a>
+                <a class="categories" href="#">Potter Plants<span>(12)</span></a>
+                <a class="categories" href="#">Seeds<span>(65)</span></a>
+                <a class="categories" href="#">Small Plants<span>(39)</span></a>
+                <a class="categories" href="#">Big Plants<span>(23)</span></a>
+                <a class="categories" href="#">Succulents<span>(17)</span></a>
+                <a class="categories" href="#">Trerrariums<span>(19)</span></a>
+                <a class="categories" href="#">Gardening<span>(13)</span></a>
+                <a class="categories" href="#">Accessories<span>(18)</span></a>
               </div>
-              <div class="price">
-                <p>Price:</p>
-                <label for="range1">$
-                  <span id="range1">0</span>
-                </label>
-                <span style="margin-right: 10px;"> &dash;</span>
-                <label for="range2">$
-                  <span id="range2">100</span>
-                </label>
+              <div class="menu-price">
+                <h2 class="menu-price-title menu-title">Price-Range</h2>
+                <div class="wrapper">
+                  <div class="wrapper-container">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="2000" value="0" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="2000" value="1230" id="slider-2" oninput="slideTwo()">
+                  </div>
+                  <div class="price">
+                    <p>Price:</p>
+                    <label for="range1">$
+                      <span id="range1">0</span>
+                    </label>
+                    <span style="margin-right: 10px;"> &dash;</span>
+                    <label for="range2">$
+                      <span id="range2">100</span>
+                    </label>
+                  </div>
+                </div>
+                <a href="#" class="price-button button">Filter</a>
+              </div>
+              <div class="menu-size">
+                <h2 class="menu-size-title menu-title">Size</h2>
+                <a href="#" class="categories">Small<span>(119)</span></a>
+                <a href="#" class="categories">Medium<span>(86)</span></a>
+                <a href="#" class="categories">Large<span>(78)</span></a>
+              </div>
+              <div class="menu-bottom">
+                <a class="menu-bottom-link" href="#">
+                  <h2 class="menu-bottom-link-title">Super Sale</h2>
+                  <p class="menu-bottom-link-text">UP TO 75% OFF</p>
+                </a>
               </div>
             </div>
-            <a href="#" class="price-button button">Filter</a>
           </div>
-
-          <div class="menu-size">
-            <h2 class="menu-size-title menu-title">Size</h2>
-            <a href="#" class="categories">Small<span>(119)</span></a>
-            <a href="#" class="categories">Medium<span>(86)</span></a>
-            <a href="#" class="categories">Large<span>(78)</span></a>
+          <!-- Product -->
+          <div class="products">
+            <div class="products-header">
+              <nav class="products-nav">
+                <ul class="products-nav-list">
+                  <li class="products-nav-list-item">
+                    <a class="products-nav-list-item-link" href="#">All Plants</a>
+                  </li>
+                  <li class="products-nav-list-item">
+                    <a class="products-nav-list-item-link" href="#">New Arrivals</a>
+                  </li>
+                  <li class="products-nav-list-item">
+                    <a class="products-nav-list-item-link" href="#">Sale</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="cell" id="search_mobile">
+                <label for="">Sort by:</label>
+                <select>
+                  <option value="">Default sorting</option>
+                  <option value="">Price: Low to High</option>
+                  <option value="">Price: High to Low</option>
+                  <option value="">Avg. Customer Review</option>
+                  <option value="">Newest Arrivals</option>
+                </select>
+              </div>
+            </div>
+            
+            <ul class="products-list">
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Barberton-Daisy.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Barberton Daisy</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">119.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Angel-Wing-Begonia.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Angel Wing Begonia</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">169.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/African-Violet.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">African Violet</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">199.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Beach-Spider-Lily.png" widht="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Beach Spider Lily</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">129.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Blushing-Bromeliad.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Blushing Bromeliad</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">139.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Aluminum-Plant.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Aluminum Plant</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">179.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Bird's-Nest-Fern.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Bird's Nest Fern</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">99.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Broadleaf-Lady-Palm.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Broadleaf Lady Palm</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">59.00</span>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <div class="product-list-img">
+                  <img class="product-list-item-img" src="img/Chinese-Evergreen.png" alt="" width="250" height="250">
+                </div>
+                <h2 class="product-list-item-title">
+                  <a class="product-list-item-title-link" href="#">Chinese Evergreen</a>
+                </h2>
+                <div class="products-list-item-price">
+                  <span class="a-price-symbol">$</span>
+                  <span class="a-price-whole">39.00</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="menu-bottom">
-          <a class="menu-bottom-link" href="#">
-            <h2 class="menu-bottom-link-title">Super Sale</h2>
-            <p class="menu-bottom-link-text">UP TO 75% OFF</p>
-          </a>
+      </main>
+      <!-- Page -->
+      <div class="page">
+        <div class="container page-container">
+          <ul class="pagination">
+            <li class="pagination-list"><a class="pagination-list-link" href="#">1</a></li>
+            <li class="pagination-list"><a class="pagination-list-link" href="#">2</a></li>
+            <li class="pagination-list"><a class="pagination-list-link" href="#">3</a></li>
+            <li class="pagination-list"><a class="pagination-list-link" href="#">4</a></li>
+            <li class="pagination-list"><a class="pagination-list-link" href="#"><img class="pagination-img" src="img/Arrow - Right 2.svg" alt="right" width="18" height="18"></a></li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+      <!-- Popular -->
+      <div class="popular">
+        <div class="popular-container container">
+          <div class="popular-item">
+            <img class="popular-item-img" src="img/Blushing-Bromeliad.png" alt="Blushing Bromeliad" width="290" height="290">
+            <div class="popular-item-content">
+              <h2 class="popular-item-content-title">Summer cactus <br>& succulents</h2>
+              <p class="popular-item-content-text">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+              <a class="popular-item-content-button button" href="#">Find More<span class="popular-button-span"><img src="img/button-arrow-right.svg" alt="arrow right" width="18" height="18"></span></a>
+            </div>
+          </div>
+          <div class="popular-item">
+            <img class="popular-item-img" src="img/African-Violet.png" alt="African Violet" width="290" height="290">
+            <div class="popular-item-content">
+              <h2 class="popular-item-content-title">Styling Trends <br>& much more</h2>
+              <p class="popular-item-content-text">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+              <a class="popular-item-content-button button" href="#">Find More<span class="popular-button-span"><img src="img/button-arrow-right.svg" alt="arrow right" width="18" height="18"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+    </html>
