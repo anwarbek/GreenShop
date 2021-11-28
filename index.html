@@ -12,6 +12,7 @@
 </head>
 <body>
   
+  <!-- Hero -->
   <header class="site-header">
     <div class="container">
       <div class="header-item">
@@ -36,21 +37,18 @@
               <input  id="search" name="search" type="text" placeholder="">
             </form>
           </div>
-          
           <div class="login-item">
             <a href="#" class="basket-link">
               <img class="basket-link-img" src="img/basket-icon.svg" alt="basket-icon">
               <span class="basket-icon-number">6</span>
             </a>
           </div>
-          
           <div class="login-item">
             <a class="header-button-item button" href="#">
               <span class="button-inner">
                 <span class="button-text">Login</span></span>
               </a>
             </div>
-            
           </div>
         </div>
         <hr class="header-divider">
@@ -69,6 +67,62 @@
         </div>
       </div>
     </div>
+    
+    <!-- Menu -->
+    <div class="menu">
+      <div class="container">
+        <div class="menu-content">
+          <div class="menu-categories">
+            <h2 class="menu-categories-title menu-title">Categories</h2>
+            <a class="categories" href="#">House Plants<span>(33)</span></a>
+            <a class="categories" href="#">Potter Plants<span>(12)</span></a>
+            <a class="categories" href="#">Seeds<span>(65)</span></a>
+            <a class="categories" href="#">Small Plants<span>(39)</span></a>
+            <a class="categories" href="#">Big Plants<span>(23)</span></a>
+            <a class="categories" href="#">Succulents<span>(17)</span></a>
+            <a class="categories" href="#">Trerrariums<span>(19)</span></a>
+            <a class="categories" href="#">Gardening<span>(13)</span></a>
+            <a class="categories" href="#">Accessories<span>(18)</span></a>
+          </div>
+
+          <div class="menu-price">
+            <h2 class="menu-price-title menu-title">Price-Range</h2>
+            <div class="wrapper">
+              <div class="wrapper-container">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="2000" value="0" id="slider-1" oninput="slideOne()">
+                <input type="range" min="0" max="2000" value="1230" id="slider-2" oninput="slideTwo()">                
+              </div>
+              <div class="price">
+                <p>Price:</p>
+                <label for="range1">$
+                  <span id="range1">0</span>
+                </label>
+                <span style="margin-right: 10px;"> &dash;</span>
+                <label for="range2">$
+                  <span id="range2">100</span>
+                </label>
+              </div>
+            </div>
+            <a href="#" class="price-button button">Filter</a>
+          </div>
+
+          <div class="menu-size">
+            <h2 class="menu-size-title menu-title">Size</h2>
+            <a href="#" class="categories">Small<span>(119)</span></a>
+            <a href="#" class="categories">Medium<span>(86)</span></a>
+            <a href="#" class="categories">Large<span>(78)</span></a>
+          </div>
+        </div>
+        <div class="menu-bottom">
+          <a class="menu-bottom-link" href="#">
+            <h2 class="menu-bottom-link-title">Super Sale</h2>
+            <p class="menu-bottom-link-text">UP TO 75% OFF</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
     
     <script src="js/main.js"></script>
   </body>
